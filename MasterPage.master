@@ -1,0 +1,132 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="loja.MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<title>LOJA v1.0</title>
+    <!-- basic styels -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+
+    <!-- basic scripts -->
+    <script src="js/jquery-1.4.2.min.js"></script>
+
+    <!-- specif styles and scripts -->
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div id="topo">
+		    <div class="topo">
+                <div class="img"><a href="~/" runat="server"><img src="img/layout/logo.png" alt="$ E-COMMERCE" title="$ E-COMMERCE" /></a></div>
+                <div class="ln1">
+                    <ul style="float: left">
+                        <li><a href="~/login.aspx" runat="server" class="white">Faça seu login</a></li>
+                    </ul>
+                    <ul style="float: right">
+                        <li>Meu Cadastro</li>
+                        <li>|</li>
+                        <li>Meus Pedidos</li>
+                        <li>|</li>
+                        <li>Atendimento</li>
+                    </ul>
+                </div>
+                <div class="ln2">
+                    <input type="text" name="txtBusca" style="width: 400px" />
+                    <input type="button" name="btnBusca" value="buscar" />
+                    <div class="carrinho">Carrinho</div>
+                </div>
+            </div>
+	    </div>
+        <div id="menutopo">
+		    <div class="menutopo">
+                <span>|</span>
+                <span>CATEGORIAS</span>
+                <span>|</span>
+                <span><a href="categoria_nivel_1.html">CAMA, MESA E BANHO</a></span>
+                <span>|</span>
+                <span><a href="categoria_nivel_1.html">CÂMERAS</a></span>
+                <span>|</span>
+                <span><a href="categoria_nivel_1.html">CELULARES</a></span>
+                <span>|</span>
+                <span><a href="categoria_nivel_1.html">GAMES</a></span>
+                <span>|</span>
+                <span><a href="categoria_nivel_1.html">INFORMÁTICA</a></span>
+                <span>|</span>
+                <span><a href="categoria_nivel_1.html">TV E VÍDEO</a></span>
+                <span>|</span>
+            </div>
+	    </div>
+
+        <!-- BEGIN CONTEÚDO -->
+        <asp:ContentPlaceHolder ID="conteudo" runat="server"></asp:ContentPlaceHolder>
+        <!-- END CONTEÚDO -->
+
+        <div id="barrabusca">
+            <input type="text" name="txtBusca" class="txt" /><input type="button" name="btnBusca" value="buscar" class="btn" />
+        </div>
+	    <div id="rodape">
+		    <div class="rodape">
+                <ul>
+                    <li>Dúvidas</li>
+                    <li><a href="#">Sobre a entrega</a></li>
+                    <li><a href="#">Política de Privacidade</a></li>
+                    <li><a href="#">Política de Troca</a></li>
+                    <li><a href="#">Compra segura</a></li>
+                </ul>
+                <ul>
+                    <li>Institucional</li>
+                    <li><a href="#">Sobre a E-Commerce</a></li>
+                    <li><a href="#">Trabalhe conosco</a></li>
+                    <li><a href="#">Como pagar</a></li>
+                </ul>
+                <ul>
+                    <li>Atendimento</li>
+                    <li>Compre pelo telefone<br /><strong>(11) 5505-0267</strong></li>
+                </ul>
+                <ul>
+                    <li>Redes Sociais</li>
+                    <li>
+                        <img src="img/ico/facebook.png" width="20px" alt="facebook" title="facebook" />
+                        <img src="img/ico/twitter.png" width="20px" alt="twitter" title="twitter" />
+                        <img src="img/ico/google-plus.png" width="20px" alt="google+" title="google+" />
+                    </li>
+                </ul>
+                <ul>
+                    <li>Formas de Pagamento</li>
+                    <li>
+                        <span>
+                            Crédito<br />
+                            <img src="img/ico/credito-visa.png" alt="visa" title="visa" />
+                            <img src="img/ico/credito-mastercard.png" alt="mastercard" title="mastercard" />
+                            <img src="img/ico/credito-amex.png" alt="american express" title="american express" />
+                            <img src="img/ico/credito-diners.png" alt="diners" title="diners" />
+                            <img src="img/ico/credito-aura.png" alt="auro" title="auro" />
+                            <img src="img/ico/credito-hipercard.png" alt="hipercard" title="hipercard" />
+                            <img src="img/ico/credito-elo.png" alt="elo" title="elo" />
+                        </span>
+                        <span>
+                            Débito<br />
+                            <img src="img/ico/debito-itau.png" alt="itaú" title="itaú" />
+                            <img src="img/ico/debito-bradesco.png" alt="bradesco" title="bradesco" />
+                        </span>
+                        <span>
+                            Boleto<br />
+                            <img src="img/ico/boleto.png" alt="boleto" title="boleto" />
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <br clear="all" />
+	    </div>
+	    <div id="rodapeextra">
+            <span>Preços e condições exclusicos para o site www.e-commerce.com.br, podendo sofrer alterações sem prévia notificação.</span>
+            <span>www.e-commerce.com.br / Rua Geraldo Flausino Gomes, 42 - Cj. 121 / São Paulo - SP / CEP: 04575-060 / CNPJ: 00.000.000/0000-00</span>
+            <span>Telefone: (11) 5505-0267 / atendimento@ecommerce.com.br</span>
+	    </div>
+    </form>
+</body>
+
+</html>

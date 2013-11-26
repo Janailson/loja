@@ -1,0 +1,272 @@
+﻿/* CONTEÚDO */
+div#principal {
+    width: 1000px;
+    min-height: 500px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+    div#principal .colEsq {
+        width: 390px;
+        min-height: inherit;
+        float: left;
+        margin-right: 10px;
+    }
+
+.colEsq .foto-media {
+    height: 390px;
+    border: solid #bbb 1px;
+}
+
+    .colEsq .foto-media img {
+        margin: 49px 0 0 49px;
+    }
+
+.colEsq .foto_thumb {
+    height: 55px;
+    border-bottom: solid #bbb 1px;
+    border-left: solid #bbb 1px;
+    border-right: solid #bbb 1px;
+}
+
+.foto_thumb ul li.prev {
+    width: 44px;
+    background: url(../img/btn/prev.png) no-repeat;
+    background-position: 6px 9px;
+}
+
+.foto_thumb ul li.next {
+    width: 44px;
+    background: url(../img/btn/next.png) no-repeat;
+    background-position: 6px 9px;
+}
+
+.foto_thumb ul li {
+    width: 73px;
+    height: 50px;
+    float: left;
+    display: block;
+    text-align: center;
+    border-left: solid #bbb 1px;
+    padding-top: 5px;
+}
+
+    .foto_thumb ul li:first-child {
+        border-left: 0;
+    }
+
+.colEsq .compartilhe {
+    width: inherit;
+    height: 100px;
+    border: solid #bbb 1px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+    .colEsq .compartilhe span {
+        font-size: 15px;
+        font-weight: bold;
+        padding: 10px 0;
+        display: block;
+    }
+
+div#principal .colDir {
+    width: 590px;
+    min-height: inherit;
+    float: right;
+    margin-left: 10px;
+}
+
+.colDir h1 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.colDir span.codigo {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    float: left;
+    margin-top: 15px;
+}
+
+.colDir span.marca {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    float: right;
+    margin-top: 15px;
+}
+
+ul.avaliacao {
+    margin-top: 30px;
+}
+
+    ul.avaliacao li {
+        font-family: Tahoma, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        display: inline-block;
+        height: 16px;
+        vertical-align: middle;
+        padding-right: 25px;
+    }
+
+        ul.avaliacao li:first-child {
+            width: 80px;
+            background: url(../img/ico/star.png) no-repeat;
+            padding-right: 10px;
+        }
+
+        ul.avaliacao li.r5 {
+            background-position: 0 0;
+        }
+
+        ul.avaliacao li.r4 {
+            background-position: 0 -16px;
+        }
+
+        ul.avaliacao li.r3 {
+            background-position: 0 -32px;
+        }
+
+        ul.avaliacao li.r2 {
+            background-position: 0 -48px;
+        }
+
+        ul.avaliacao li.r1 {
+            background-position: 0 -64px;
+        }
+
+        ul.avaliacao li.r0 {
+            background-position: 0 -80px;
+        }
+
+.colDir .valor {
+    min-height: 50px;
+    padding: 15px;
+    background-color: #eee;
+    margin-top: 40px;
+    border-top: solid #444 2px;
+    border-bottom: solid #444 2px;
+}
+
+    .colDir .valor .valores {
+        display: block;
+        float: left;
+    }
+
+        .colDir .valor .valores span {
+            font-family: Tahoma, Arial, Helvetica, sans-serif;
+            display: block;
+        }
+
+            .colDir .valor .valores span.vl1 {
+                color: #444;
+            }
+
+            .colDir .valor .valores span.vl2 {
+                color: #b70f15;
+                padding-top: 5px;
+            }
+
+                .colDir .valor .valores span.vl2 strong {
+                    font-size: 24px;
+                    font-weight: normal;
+                }
+
+            .colDir .valor .valores span.vl3 {
+                color: #b70f15;
+                padding-top: 2px;
+            }
+
+                .colDir .valor .valores span.vl3 strong {
+                    font-size: 18px;
+                    font-weight: normal;
+                }
+
+    .colDir .valor .comprar {
+        display: block;
+        float: right;
+    }
+
+.colDir .cx-frete {
+    padding: 15px;
+    border: solid #bbb 1px;
+    margin-top: 30px;
+    background: url(../img/ico/frete.png) no-repeat 12px;
+}
+
+    .colDir .cx-frete .frete {
+        position: relative;
+        margin-left: 40px;
+        padding: 10px 20px;
+        border-left: solid #bbb 1px;
+    }
+
+        .colDir .cx-frete .frete span {
+            display: block;
+        }
+
+.colDir .cx-parcela {
+    padding: 15px;
+    border: solid #bbb 1px;
+    margin-top: 30px;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    color: #444;
+    font-weight: bold;
+}
+
+    .colDir .cx-parcela span {
+        display: block;
+        padding: 3px 0;
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .colDir .cx-parcela ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+        .colDir .cx-parcela ul li {
+            width: 278px;
+            padding: 3px 0;
+            text-align: center;
+        }
+
+.descricao {
+    width: 1000px;
+    margin: 30px auto auto;
+}
+
+    .descricao h2 {
+        font-family: Tahoma, Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    .descricao div {
+        padding: 15px 0;
+<<<<<<< HEAD
+    }
+
+        .descricao div table {
+            width: 100%;
+        }
+
+            .descricao div table th {
+                width: 150px;
+                text-align: right;
+                padding: 5px 15px 5px 0;
+                vertical-align: top;
+            }
+
+            .descricao div table td {
+                padding: 5px 0;
+            }
+=======
+    }
+>>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739

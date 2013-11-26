@@ -1,0 +1,17 @@
+\\janailson-pc\wwwroot\loja\loja.Data\bin\Debug\loja.Data.dll
+\\janailson-pc\wwwroot\loja\loja.Data\bin\Debug\loja.Data.pdb
+\\janailson-pc\wwwroot\loja\loja.Data\bin\Debug\loja.Entity.dll
+\\janailson-pc\wwwroot\loja\loja.Data\bin\Debug\loja.Entity.pdb
+\\janailson-pc\wwwroot\loja\loja.Data\obj\Debug\loja.Data.csprojResolveAssemblyReference.cache
+\\janailson-pc\wwwroot\loja\loja.Data\obj\Debug\loja.Data.dll
+\\janailson-pc\wwwroot\loja\loja.Data\obj\Debug\loja.Data.pdb
+<<<<<<< HEAD
+\\JANA-NOTE\wwwroot\loja\loja.Data\bin\Debug\loja.Data.dll
+\\JANA-NOTE\wwwroot\loja\loja.Data\bin\Debug\loja.Data.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Data\bin\Debug\loja.Entity.dll
+\\JANA-NOTE\wwwroot\loja\loja.Data\bin\Debug\loja.Entity.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Data\obj\Debug\loja.Data.csprojResolveAssemblyReference.cache
+\\JANA-NOTE\wwwroot\loja\loja.Data\obj\Debug\loja.Data.dll
+\\JANA-NOTE\wwwroot\loja\loja.Data\obj\Debug\loja.Data.pdb
+=======
+>>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739

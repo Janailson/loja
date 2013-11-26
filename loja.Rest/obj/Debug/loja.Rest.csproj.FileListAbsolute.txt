@@ -1,0 +1,5 @@
+\\JANA-NOTE\wwwroot\loja\loja.Rest\bin\Debug\loja.Rest.dll
+\\JANA-NOTE\wwwroot\loja\loja.Rest\bin\Debug\loja.Rest.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Rest\obj\Debug\loja.Rest.csprojResolveAssemblyReference.cache
+\\JANA-NOTE\wwwroot\loja\loja.Rest\obj\Debug\loja.Rest.dll
+\\JANA-NOTE\wwwroot\loja\loja.Rest\obj\Debug\loja.Rest.pdb

@@ -1,0 +1,344 @@
+/* GERAL */
+body {
+    font-family: Verdana;
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+ul.linha, ul.subcategoria, .menu ul, .foto_thumb ul, ul.avaliacao {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+div#menutopo a, .categoria a, .subcategoria a {
+    text-decoration: none;
+    color: #000;
+}
+
+<<<<<<< HEAD
+a.white {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.menu a {
+    text-decoration: none;
+    color: #000;
+}
+
+=======
+>>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
+/* TOPO */
+div#topo {
+    width: 100%;
+    margin: 0;
+    background-color: #004;
+}
+
+    div#topo .topo {
+        width: 1000px;
+        height: 100px;
+        margin: auto;
+    }
+
+    div#topo div.topo div.img {
+        width: 250px;
+        height: 100px;
+        float: left;
+    }
+
+        div#topo div.topo div.img img {
+            margin: 15px auto;
+        }
+
+    div#topo div.topo div.ln1 {
+        width: 750px;
+        height: 20px;
+        padding-top: 30px;
+        float: right;
+    }
+
+        div#topo div.topo div.ln1 ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            div#topo div.topo div.ln1 ul li {
+                display: inline;
+                color: #fff;
+            }
+
+    div#topo div.topo div.ln2 {
+        width: 750px;
+        height: 35px;
+        padding-top: 15px;
+        float: right;
+    }
+
+        div#topo div.topo div.ln2 div.carrinho {
+            width: 85px;
+            height: 22px;
+            border: solid #c5d8eb 1px;
+            margin-top: -5px;
+            padding: 8px 0 0 45px;
+            float: right;
+            color: #fff;
+            background: url(../img/ico/cart.png) no-repeat 5px;
+            font-weight: bold;
+        }
+
+/* MENU TOPO */
+div#menutopo {
+    width: 100%;
+    height: 30px;
+    padding-top: 10px;
+    background: url(../img/layout/menutopo_bg.png) repeat-x;
+}
+
+    div#menutopo div.menutopo {
+        width: 1000px;
+        margin: auto;
+        text-align: center;
+    }
+
+/* BANNER TV */
+div#bannertv {
+    width: 100%;
+    height: 250px;
+    background-color: #eee;
+    border-top: solid #fff 1px;
+    border-bottom: solid #fff 1px;
+}
+
+    div#bannertv div.banner {
+        width: 1000px;
+        height: 250px;
+        margin: auto;
+        background-color: #ddd;
+    }
+
+/* MIGALHA */
+div#migalha {
+    width: 1000px;
+    margin: 20px auto 30px;
+    font-size: 10px;
+    color: #ccc;
+    font-weight: bold;
+    border-bottom: solid #ccc 1px ;
+    padding: 5px 0;
+}
+
+    div#migalha a {
+        text-decoration: none;
+        color: #444;
+    }
+
+/* CONTEÚDO */
+ul.linha li {
+    float: left;
+    margin-left: 10px;
+    padding: 10px 0 20px;
+    border-bottom: solid #eaebeb 1px;
+}
+
+div.prd {
+    width: 185px;
+    margin: auto;
+}
+
+    div.prd a:hover {
+        border: solid #c6c6c6 1px;
+        background-color: #f1f1f1;
+    }
+
+        div.prd a:hover span.productImage {
+            border: solid #c6c6c6 1px;
+        }
+
+    div.prd a {
+        display: block;
+        padding: 5px;
+        text-decoration: none;
+        color: #000;
+        border: solid #fff 1px;
+        background-color: #fff;
+    }
+
+span.productImage, span.productFlag, span.productName, span.productDetails {
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    display: block;
+}
+
+span.productImage {
+    text-align: center;
+    margin-bottom: 10px;
+    border: solid #fff 1px;
+    background-color: #fff;
+}
+
+span.productFlag {
+    margin-bottom: 10px;
+}
+
+span.productName {
+    font-weight: normal;
+    margin-bottom: 6px;
+    white-space: normal;
+    font-size: 11px;
+}
+
+span.productDetails span.promocao {
+    font-size: 11px;
+    display: inline-block;
+}
+
+span.promocao strong {
+    font-weight: normal;
+}
+
+span.productDetails span.preco {
+    font-size: 11px;
+    color: #b70f15;
+    display: inline-block;
+}
+
+span.preco strong {
+    font-size: 1.363em;
+}
+
+span.productDetails span.parcela {
+    font-size: 11px;
+    display: inline-block;
+}
+
+.star {
+    background: url(../img/ico/star.png) no-repeat;
+    display: block;
+    width: 90px;
+    height: 16px;
+    float: left;
+}
+
+.r5 {
+    background-position: 0 0;
+}
+
+.r4 {
+    background-position: 0 -16px;
+}
+
+.r3 {
+    background-position: 0 -32px;
+}
+
+.r2 {
+    background-position: 0 -48px;
+}
+
+.r1 {
+    background-position: 0 -64px;
+}
+
+.r0 {
+    background-position: 0 -80px;
+}
+
+/* RODAPÉ */
+div#barrabusca {
+    height: 60px;
+    background-color: #004;
+    text-align: center;
+}
+
+    div#barrabusca input.txt {
+        width: 650px;
+        height: 30px;
+        border: solid #333 2px;
+        margin-top: 13px;
+    }
+
+    div#barrabusca input.btn {
+        height: 34px;
+        border: 0;
+        background-color: #333;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 13px;
+    }
+
+div#rodape {
+    width: 100%;
+    min-height: 80px;
+    padding: 20px 0;
+    background-color: #eee;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+
+    div#rodape div.rodape {
+        width: 1000px;
+        margin: auto;
+    }
+
+        div#rodape div.rodape ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            float: left;
+            margin-right: 15px;
+        }
+
+            div#rodape div.rodape ul li:first-child {
+                color: #333;
+                font-weight: bold;
+                border-bottom: solid #333 1px;
+                margin-bottom: 15px;
+            }
+
+            div#rodape div.rodape ul li {
+                padding: 2px 0;
+            }
+
+                div#rodape div.rodape ul li a {
+                    text-decoration: none;
+                    color: #333;
+                }
+
+                    div#rodape div.rodape ul li a:hover {
+                        text-decoration: underline;
+                        color: #333;
+                    }
+
+                div#rodape div.rodape ul li span {
+                    display: block;
+                    float: left;
+                    margin-right: 15px;
+                }
+
+                    div#rodape div.rodape ul li span img {
+                        margin-top: 3px;
+                    }
+
+                div#rodape div.rodape ul li strong {
+                    font-size: 1.363em;
+                    color: #b70f15;
+                }
+
+div#rodapeextra {
+    width: 100%;
+    min-height: 30px;
+    padding: 10px 0;
+    background-color: #ddd;
+    text-align: center;
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    color: #333;
+}
+
+    div#rodapeextra span {
+        display: block;
+    }

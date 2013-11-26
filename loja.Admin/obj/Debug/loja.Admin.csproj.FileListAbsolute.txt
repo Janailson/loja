@@ -1,0 +1,21 @@
+\\janailson-pc\wwwroot\loja\loja.Admin\bin\Debug\loja.Admin.dll
+\\janailson-pc\wwwroot\loja\loja.Admin\bin\Debug\loja.Admin.pdb
+\\janailson-pc\wwwroot\loja\loja.Admin\bin\Debug\loja.Data.dll
+\\janailson-pc\wwwroot\loja\loja.Admin\bin\Debug\loja.Entity.dll
+\\janailson-pc\wwwroot\loja\loja.Admin\bin\Debug\loja.Data.pdb
+\\janailson-pc\wwwroot\loja\loja.Admin\bin\Debug\loja.Entity.pdb
+\\janailson-pc\wwwroot\loja\loja.Admin\obj\Debug\loja.Admin.csprojResolveAssemblyReference.cache
+\\janailson-pc\wwwroot\loja\loja.Admin\obj\Debug\loja.Admin.dll
+\\janailson-pc\wwwroot\loja\loja.Admin\obj\Debug\loja.Admin.pdb
+<<<<<<< HEAD
+\\JANA-NOTE\wwwroot\loja\loja.Admin\bin\Debug\loja.Admin.dll
+\\JANA-NOTE\wwwroot\loja\loja.Admin\bin\Debug\loja.Admin.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Admin\bin\Debug\loja.Data.dll
+\\JANA-NOTE\wwwroot\loja\loja.Admin\bin\Debug\loja.Entity.dll
+\\JANA-NOTE\wwwroot\loja\loja.Admin\bin\Debug\loja.Data.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Admin\bin\Debug\loja.Entity.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Admin\obj\Debug\loja.Admin.csprojResolveAssemblyReference.cache
+\\JANA-NOTE\wwwroot\loja\loja.Admin\obj\Debug\loja.Admin.dll
+\\JANA-NOTE\wwwroot\loja\loja.Admin\obj\Debug\loja.Admin.pdb
+=======
+>>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739

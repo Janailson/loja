@@ -1,0 +1,17 @@
+\\janailson-pc\wwwroot\loja\loja.Idioma\bin\Debug\loja.Idioma.dll
+\\janailson-pc\wwwroot\loja\loja.Idioma\bin\Debug\loja.Idioma.pdb
+\\janailson-pc\wwwroot\loja\loja.Idioma\bin\Debug\loja.Util.dll
+\\janailson-pc\wwwroot\loja\loja.Idioma\bin\Debug\loja.Util.pdb
+\\janailson-pc\wwwroot\loja\loja.Idioma\obj\Debug\loja.Idioma.csprojResolveAssemblyReference.cache
+\\janailson-pc\wwwroot\loja\loja.Idioma\obj\Debug\loja.Idioma.dll
+\\janailson-pc\wwwroot\loja\loja.Idioma\obj\Debug\loja.Idioma.pdb
+<<<<<<< HEAD
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\obj\Debug\loja.Idioma.csprojResolveAssemblyReference.cache
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\obj\Debug\loja.Idioma.dll
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\obj\Debug\loja.Idioma.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\bin\Debug\loja.Idioma.dll
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\bin\Debug\loja.Idioma.pdb
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\bin\Debug\loja.Util.dll
+\\JANA-NOTE\wwwroot\loja\loja.Idioma\bin\Debug\loja.Util.pdb
+=======
+>>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739

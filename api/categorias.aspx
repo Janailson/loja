@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="categorias.aspx.cs" Inherits="loja.api_categorias" %>
