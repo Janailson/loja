@@ -53,10 +53,6 @@
     <Compile Include="Produto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tamanho.cs" />
-<<<<<<< HEAD
-    <Compile Include="TipoPessoa.cs" />
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
     <Compile Include="Usuario.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -14,15 +14,6 @@ namespace loja.Admin
             return new Data.Categoria().Listar(Sql);
         }
 
-<<<<<<< HEAD
-        public List<Entity.Categoria> ListarCategoria(int IDLoja)
-        {
-            string Sql = "SELECT IDCategoria, Loja_ID, dbo.f_Idioma(" + IDLoja + ",'pt-BR','Categoria',Categoria.IDCategoria,'Nome') as Nome, parentId, Site, Status, DataInclusao FROM Categoria WHERE Loja_ID=" + IDLoja;
-            return new Data.Categoria().Listar(Sql);
-        }
-
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
         public Entity.Categoria ConsultarCategoria(object IDCategoria)
         {
             string Sql = "SELECT IDCategoria, Loja_ID, parentId, Site, Status, DataInclusao FROM Categoria WHERE IDCategoria=" + IDCategoria;

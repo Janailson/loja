@@ -46,11 +46,6 @@
             {
                 marcas();
                 fornecedores();
-<<<<<<< HEAD
-                cores();
-                categorias();
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
                 if (Request["id"] != null)
                     PreencherCampos();
             }
@@ -83,35 +78,6 @@
         }
 
         /// <summary>
-<<<<<<< HEAD
-        /// Preenche Dropdown com as cores cadastradas
-        /// </summary>
-        private void cores()
-        {
-            ddlCor.Items.Clear();
-            ddlCor.Items.Add(new ListItem("", "0"));
-            new Admin.Cor().ListarCor(objLoja.IDLoja).ForEach(delegate(Entity.Cor cor)
-            {
-                ddlCor.Items.Add(new ListItem(cor.Nome, cor.IDCor.ToString()));
-            });
-        }
-
-        /// <summary>
-        /// Preenche Dropdown com as categorias cadastradas
-        /// </summary>
-        private void categorias()
-        {
-            ddlCategoria.Items.Clear();
-            ddlCategoria.Items.Add(new ListItem("", "0"));
-            new Admin.Categoria().ListarCategoria(objLoja.IDLoja).ForEach(delegate(Entity.Categoria categoria)
-            {
-                ddlCategoria.Items.Add(new ListItem(categoria.Nome, categoria.IDCategoria.ToString()));
-            });
-        }
-
-        /// <summary>
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
         /// Cria campo para cada idioma adicional
         /// </summary>
         /// <param name="Campo"></param>
@@ -145,12 +111,6 @@
 
             for (int i = 0; i < objLoja.Idiomas.Count; i++)
             {
-<<<<<<< HEAD
-                if (Request["id"] != null)
-                    arr[i] = PreencherIdioma("Detalhe", objLoja.Idiomas[i].IDIdioma);
-
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
                 Response.Write("<div class='controls' style='border: solid #ccc 1px; padding: 5px; margin-bottom: 10px; background-color: #fee'>\n");
                 Response.Write("<p><img src='../../assets/icons/" + objLoja.Idiomas[i].Codigo + ".png' alt='' title='" + objLoja.Idiomas[i].Nome + "' /></p>\n");
                 Response.Write("<div style='height: 180px; overflow: auto; background-color: #fff'>" + arr[i] + "</div>\n");
@@ -173,13 +133,6 @@
                     case "Nome":
                         Entity.Dicionario nome = produto.Dicionarios.Find(delegate(Entity.Dicionario p1) { return (p1.Idioma_ID == Id && p1.Descricao == "Nome"); });
                         return nome.Valor;
-<<<<<<< HEAD
-                    case "Detalhe":
-                        Entity.Dicionario detalhe = produto.Dicionarios.Find(delegate(Entity.Dicionario p1) { return (p1.Idioma_ID == Id && p1.Descricao == "Detalhe"); });
-                        if (detalhe == null || detalhe.Valor == null) return "";
-                        return detalhe.Valor;
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
                 }
             }
 
@@ -202,21 +155,10 @@
             // geral
             txtNome.Text = nomes[0].Valor;
             ddlMarca.Items.FindByValue(produto.Marca_ID.ToString()).Selected = true;
-<<<<<<< HEAD
-            ddlFornecedor.Items.FindByValue(produto.Fornecedor_ID.ToString()).Selected = true;
-            ddlCor.Items.FindByValue(produto.Cor_ID.ToString()).Selected = true;
-            txtCodigo.Text = produto.Codigo;
-
-            chkDestaque.Checked = produto.Destaque;
-            chkLancamento.Checked = produto.Lancamento;
             chkStatus.Checked = produto.Status;
-            txtVideo.Text = produto.Video;
 
             // painéis vitrine, características, específicações do produto e comentários
             pnl.Visible = true;
-=======
-            chkStatus.Checked = produto.Status;
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
         }
 
         /// <summary>
@@ -230,11 +172,6 @@
             string Nome = txtNome.Text.Trim().Replace("'", "''");
             string Marca = ddlMarca.SelectedValue;
             string Fornecedor = ddlFornecedor.SelectedValue;
-<<<<<<< HEAD
-            string Cor = ddlCor.SelectedValue;
-            string Codigo = txtCodigo.Text.Trim().Replace("'", "''");
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
             bool Destaque = chkDestaque.Checked;
             bool Lancamento = chkLancamento.Checked;
             bool Status = chkStatus.Checked;
@@ -265,11 +202,6 @@
                 produto.Loja_ID = objUsuario.Loja_ID;
                 produto.Marca_ID = Convert.ToInt32(Marca);
                 produto.Fornecedor_ID = Convert.ToInt32(Fornecedor);
-<<<<<<< HEAD
-                produto.Cor_ID = Convert.ToInt32(Cor);
-                produto.Codigo = Codigo;
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
                 produto.Destaque = Destaque;
                 produto.Lancamento = Lancamento;
                 produto.Status = Status;
@@ -333,10 +265,6 @@
                     icon = Icon.ok;
                     new Constante().label_message(pnlMsg, Alert.success, labMsg, "Cadastro realizado com sucesso.");
                     LimparCampos();
-<<<<<<< HEAD
-                    Response.Redirect("registro.aspx?id=" + ret.Identity);
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
                 }
             }
         }
@@ -365,10 +293,6 @@
             labMsg.Text = "";
 
             new Constante().input_error(pnlNome, lblNome);
-<<<<<<< HEAD
-            new Constante().input_error(pnlMarca, lblMarca);
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
         }
 
         /// <summary>

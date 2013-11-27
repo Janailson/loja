@@ -79,42 +79,6 @@
 			</div>
 		</asp:Panel>
 
-<<<<<<< HEAD
-        <asp:Panel ID="pnlCor" runat="server" CssClass="control-group">
-			<label class="control-label"><%=Idioma.Cor%> : *</label>
-			<div class="controls">
-                <span class="input-icon input-icon-right span3">
-                    <asp:DropDownList ID="ddlCor" runat="server"></asp:DropDownList>
-                    <% if (lblCor.Visible) { %><i class="icon-remove-sign"></i><% } %>
-                </span>
-                <asp:Label ID="lblCor" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
-			</div>
-		</asp:Panel>
-
-        <asp:Panel ID="pnlCodigo" runat="server" CssClass="control-group">
-			<label class="control-label"><%=Idioma.Codigo%> : *</label>
-			<div class="controls">
-                <span class="input-icon input-icon-right span3">
-                    <asp:TextBox ID="txtCodigo" runat="server" CssClass="tooltip-error span6" MaxLength="12"></asp:TextBox>
-                    <% if (lblCodigo.Visible) { %><i class="icon-remove-sign"></i><% } %>
-                </span>
-                <asp:Label ID="lblCodigo" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
-			</div>
-		</asp:Panel>
-
-        <asp:Panel ID="pnlCategoria" runat="server" CssClass="control-group">
-			<label class="control-label"><%=Idioma.Categoria%> : *</label>
-			<div class="controls">
-                <span class="input-icon input-icon-right span3">
-                    <asp:DropDownList ID="ddlCategoria" runat="server"></asp:DropDownList>
-                    <% if (lblCategoria.Visible) { %><i class="icon-remove-sign"></i><% } %>
-                </span>
-                <asp:Label ID="lblCategoria" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
-			</div>
-		</asp:Panel>
-
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
         <asp:Panel ID="pnlDestaque" runat="server" CssClass="control-group">
 			<label class="control-label"><%=Idioma.Destaque%> : *</label>
 			<div class="controls">
@@ -178,7 +142,6 @@
 
     <asp:Panel ID="pnl" runat="server" Visible="false">
         <h3 class="header smaller lighter blue">
-<<<<<<< HEAD
 		    <small><%=Idioma.Vitrines%></small>
 	    </h3>
         <div class="row-fluid form-horizontal">
@@ -193,48 +156,14 @@
                 </button>
             </div>
         </div>
-=======
-		    <small><%=Idioma.Vitrine%></small>
-	    </h3>
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
 
         <h3 class="header smaller lighter blue">
 		    <small><%=Idioma.Caracteristicas%></small>
 	    </h3>
-<<<<<<< HEAD
-        <div class="row-fluid form-horizontal">
-            <div class="control-group">
-                <button class="btn btn-mini btn-primary" onclick="window.location='caracteristicas/registro.aspx?produto=<%=Request["id"]%>'; return false;">
-			        <i class="icon-plus-sign"></i>
-			        adicionar característica
-		        </button>
-                <button class="btn btn-mini btn-danger">
-                    <i class="icon-remove"></i>
-                    remover selecionado(s)
-                </button>
-            </div>
-        </div>
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
 
         <h3 class="header smaller lighter blue">
 		    <small><%=Idioma.Especificacoes%></small>
 	    </h3>
-<<<<<<< HEAD
-        <div class="row-fluid form-horizontal">
-            <div class="control-group">
-                <button class="btn btn-mini btn-primary" onclick="window.location='especificacoes/registro.aspx?produto=<%=Request["id"]%>'; return false;">
-			        <i class="icon-plus-sign"></i>
-			        adicionar especificação
-		        </button>
-                <button class="btn btn-mini btn-danger">
-                    <i class="icon-remove"></i>
-                    remover selecionado(s)
-                </button>
-            </div>
-        </div>
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
 
         <h3 class="header smaller lighter blue">
 		    <small><%=Idioma.Comentarios%></small>
@@ -281,12 +210,6 @@
 	            // link
 	            if ($(this).attr('href'))
 	                src = $(this).attr('href');
-<<<<<<< HEAD
-=======
-	            // button
-	            if ($(this).attr("link"))
-	                src = $(this).attr('link');
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
 
 	            var _width = ($(this).attr('relw') != null) ? $(this).attr('relw') : 620;
 	            var _height = ($(this).attr('relh') != null) ? $(this).attr('relh') : 420;

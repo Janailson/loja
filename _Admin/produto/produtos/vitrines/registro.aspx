@@ -19,13 +19,13 @@
             </span>
         </li>
         <li>
-            <a href="../listagem.aspx">Produtos</a>
+            <a href="listagem.aspx">Produtos</a>
             <span class="divider">
                 <i class="icon-angle-right"></i>
             </span>
         </li>
         <li>
-            <a href="../registro.aspx?id=<%=Request["produto"]%>"><%=new loja.Admin.Produto().ConsultarProduto(Request["produto"]).Nome%></a>
+            <a href="listagem.aspx"><%=Migalha.Vitrines%></a>
             <span class="divider">
                 <i class="icon-angle-right"></i>
             </span>
@@ -58,6 +58,17 @@
                     <% if (lblTamanho.Visible) { %><i class="icon-remove-sign"></i><% } %>
                 </span>
                 <asp:Label ID="lblTamanho" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
+			</div>
+		</asp:Panel>
+
+        <asp:Panel ID="pnlCor" runat="server" CssClass="control-group">
+			<label class="control-label"><%=Idioma.Cor%> : *</label>
+			<div class="controls">
+                <span class="input-icon input-icon-right span3">
+                    <asp:DropDownList ID="ddlCor" runat="server"></asp:DropDownList>
+                    <% if (lblCor.Visible) { %><i class="icon-remove-sign"></i><% } %>
+                </span>
+                <asp:Label ID="lblCor" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
 			</div>
 		</asp:Panel>
 
@@ -102,17 +113,6 @@
                     <% if (lblProfundidade.Visible) { %><i class="icon-remove-sign"></i><% } %>
                 </span>
                 <asp:Label ID="lblProfundidade" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
-			</div>
-		</asp:Panel>
-
-        <asp:Panel ID="pnlEstoque" runat="server" CssClass="control-group">
-			<label class="control-label"><%=Idioma.Estoque%> : *</label>
-			<div class="controls">
-                <span class="input-icon input-icon-right span2">
-                    <asp:TextBox ID="txtEstoque" runat="server" CssClass="tooltip-error span12" MaxLength="50">0</asp:TextBox>
-                    <% if (lblEstoque.Visible) { %><i class="icon-remove-sign"></i><% } %>
-                </span>
-                <asp:Label ID="lblEstoque" runat="server" CssClass="help-inline" Visible="false"></asp:Label>
 			</div>
 		</asp:Panel>
 

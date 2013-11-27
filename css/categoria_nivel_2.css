@@ -1,0 +1,107 @@
+﻿/* PRINCIPAL */
+div#principal {
+    min-height: 500px;
+    padding: 0 0 10px 220px;
+    overflow: hidden;
+    display: block;
+}
+
+    div#principal div.menu {
+        width: 200px;
+        margin: 0 0 0 -210px;
+        float: left;
+    }
+
+        div#principal div.menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+            div#principal div.menu ul li {
+                padding: 7px 0 7px 10px;
+            }
+
+                div#principal div.menu ul li.tl {
+                    font-weight: bold;
+                    background-color: #ccc;
+                }
+
+                div#principal div.menu ul li.tl1 {
+                    font-weight: bold;
+                }
+
+                div#principal div.menu ul li.tl2 {
+                    font-weight: bold;
+                    border-top: dotted #ccc 1px;
+                }
+
+    div#principal div.conteudo {
+        width: 100%;
+        float: right;
+    }
+
+        div#principal div.conteudo h1 {
+            font-size: 15px;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+        }
+
+        div#principal div.conteudo hr {
+            border: 0;
+            border-top: solid #bbb 3px;
+            margin-top: 7px;
+        }
+
+        div#principal div.conteudo div.destaque {
+            width: 800px;
+            height: 200px;
+            background-color: #eee;
+            margin: 15px auto;
+        }
+
+        div#principal div.conteudo div.vitrine {
+            min-height: 500px;
+            padding-right: 10px;
+        }
+
+            div#principal div.conteudo div.vitrine div.pagin {
+                font-family: Tahoma, Arial, Helvetica, sans-serif;
+                font-size: 11px;
+                margin: 10px 0;
+                text-align: center;
+                background-color: #ebebeb;
+                padding: 10px 0;
+                color: #fff;
+            }
+
+                div#principal div.conteudo div.vitrine div.pagin span {
+                    color: #ccc;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                }
+
+                div#principal div.conteudo div.vitrine div.pagin a {
+                    text-decoration: none;
+                    color: #333;
+                    font-weight: bold;
+                    padding: 5px 10px;
+                }
+
+                    div#principal div.conteudo div.vitrine div.pagin a.atual {
+                        text-decoration: none;
+                        color: #333;
+                        font-weight: bold;
+                        margin: 0 5px;
+                        background: #b60f13;
+                        color: #f5ddde;
+                    }
+
+        div#principal div.conteudo div.extra {
+        }
+
+ul.linha li {
+    width: 23%;
+    min-height: 300px;
+}

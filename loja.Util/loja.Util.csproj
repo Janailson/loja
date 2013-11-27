@@ -43,10 +43,6 @@
   <ItemGroup>
     <Compile Include="Constante.cs" />
     <Compile Include="Enum.cs" />
-<<<<<<< HEAD
-    <Compile Include="Estado.cs" />
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
     <Compile Include="Imagem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Validacao.cs" />

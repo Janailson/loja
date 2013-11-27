@@ -53,12 +53,9 @@
             // migalha
             migalha = loja.Fantasia;
 
-<<<<<<< HEAD
             // botões
             pnlBotao.Visible = true;
 
-=======
->>>>>>> d4ef194a5565e4cead9b89585b7509b8ad988739
             // geral
             txtFantasia.Text = loja.Fantasia;
             txtRazaoSocial.Text = loja.RazaoSocial;

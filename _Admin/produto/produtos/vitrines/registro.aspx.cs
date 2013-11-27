@@ -35,6 +35,7 @@
             if (!IsPostBack)
             {
                 tamanhos();
+                cores();
                 if (Request["id"] != null)
                     PreencherCampos();
             }
@@ -54,19 +55,35 @@
         }
 
         /// <summary>
+        /// Preenche Dropdown com as cores cadastrados
+        /// </summary>
+        private void cores()
+        {
+            ddlCor.Items.Clear();
+            ddlCor.Items.Add(new ListItem("", "0"));
+            new Admin.Cor().ListarCor(objLoja.IDLoja).ForEach(delegate(Entity.Cor cor)
+            {
+                ddlCor.Items.Add(new ListItem(cor.Nome, cor.IDCor.ToString()));
+            });
+        }
+
+        /// <summary>
         /// Requisita dados do Produto ao banco de dados e preenche o formulário
         /// </summary>
         private void PreencherCampos()
         {
             Entity.Produto.Vitrine vitrine = new Admin.Produto.Vitrine().ConsultarVitrine(Request["id"]);
 
+            // migalha
+            //migalha = nomes[0].Valor;
+
             // geral
             ddlTamanho.Items.FindByValue(vitrine.Tamanho_ID.ToString()).Selected = true;
+            ddlCor.Items.FindByValue(vitrine.Cor_ID.ToString()).Selected = true;
             txtPeso.Text = vitrine.Peso.ToString();
             txtAltura.Text = vitrine.Altura.ToString();
             txtLargura.Text = vitrine.Largura.ToString();
             txtProfundidade.Text = vitrine.Profundidade.ToString();
-            txtEstoque.Text = vitrine.Estoque.ToString();
             chkStatus.Checked = vitrine.Status;
         }
 
@@ -79,12 +96,11 @@
         {
             // recupera dados digitado no formulário
             string Tamanho = ddlTamanho.SelectedValue;
+            string Cor = ddlCor.SelectedValue;
             string Peso = txtPeso.Text.Trim();
             string Altura = txtAltura.Text.Trim();
             string Largura = txtLargura.Text.Trim();
             string Profundidade = txtProfundidade.Text.Trim();
-            string Estoque = txtEstoque.Text.Trim();
-            bool Status = chkStatus.Checked;
             bool Validar = true;
 
             // limpa mensagens de erro
@@ -96,6 +112,11 @@
                 Validar = false;
                 new Constante().input_error(pnlTamanho, lblTamanho, "selecione o tamanho");
             }
+            if (ddlCor.SelectedIndex == 0)
+            {
+                Validar = false;
+                new Constante().input_error(pnlCor, lblCor, "selecione a cor");
+            }
 
             // formulário validado
             if (Validar)
@@ -104,12 +125,11 @@
                 Entity.Produto.Vitrine vitrine = new Entity.Produto.Vitrine();
                 vitrine.Produto_ID = Convert.ToInt32(Request["produto"]);
                 vitrine.Tamanho_ID = Convert.ToInt32(Tamanho);
+                vitrine.Cor_ID = Convert.ToInt32(Cor);
                 vitrine.Peso = Convert.ToDecimal(Peso);
                 vitrine.Altura = Convert.ToDecimal(Altura);
                 vitrine.Largura = Convert.ToDecimal(Largura);
                 vitrine.Profundidade = Convert.ToDecimal(Profundidade);
-                vitrine.Estoque = Convert.ToInt32(Estoque);
-                vitrine.Status = Status;
 
                 // altera registro
                 if (Request["id"] != null)
@@ -138,7 +158,7 @@
                     {
                         // exibe mensagem de erro
                         icon = Icon.remove;
-                        new Constante().label_message(pnlMsg, Alert.error, labMsg, "Vitrine: " + ret.Erro);
+                        new Constante().label_message(pnlMsg, Alert.error, labMsg, ret.Erro);
                         return;
                     }
 
@@ -174,6 +194,7 @@
             labMsg.Text = "";
 
             new Constante().input_error(pnlTamanho, lblTamanho);
+            new Constante().input_error(pnlCor, lblCor);
             new Constante().input_error(pnlPeso, lblPeso);
             new Constante().input_error(pnlAltura, lblAltura);
             new Constante().input_error(pnlLargura, lblLargura);
@@ -186,6 +207,7 @@
         private void LimparCampos()
         {
             ddlTamanho.ClearSelection();
+            ddlCor.ClearSelection();
             txtPeso.Text = "";
             txtAltura.Text = "";
             txtLargura.Text = "";
